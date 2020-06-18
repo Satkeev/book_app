@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+  <title>book details</title>
+</head>
+<body>
+  <header>
+
+  </header>
+    <img src="<%= oneBook.thumbnail %>" alt=""></img>
+    <h2><%= oneBook.title %></h2>
+    <p>By: <%= oneBook.authors %></p>
+    <p><%= oneBook.description %></p>
+    <p>ISBN: <%= oneBook.isbn %></p>
+    <p>Genre: <%= oneBook.bookshelf %></p>
+    <div>
+      <button>edit</button>
+      <button>delete</button>
+    </div>
+    <form action="/update/<%= oneBook.id %>?_method=PUT" method="post">
+      <input type="text" name="" value="<%- oneBook.title %>" placholder="<%- oneBook.title %>">
+      <input type="text" name="" value="<%- oneBook.authors %>" placholder="<%- oneBook.authors %>">
+      <input type="text" name="" value="<%- oneBook.description %>" placholder="<%- oneBook.description %>">
+      <input type="text" name="" value="<%- oneBook.isbn %>" placholder="<%- oneBook.isbn %>">
+      <input type="text" name="" value="<%- oneBook.bookshelf %>" placholder="<%- oneBook.bookshelf %>">
+      <button>submit</button>
+    </form>
+    <a href="/">Return to home</a>
+</body>
+</html>
+<p>
+for the dropdown
+if you are not saving into bookshelf column this will not work
+when you first gave the option to save the book to const {propertyName} =
+put it input to add a bookshelf name
+when you are storing to db
+then you can pull it out
+some weird stuff from jquery
+out option tag
+do a forEach
+set option tag inside the forEach to the value of the bookshelf
+you are supposed to be able to edit the bookshelf property
+</p>
+
+<!-- hkjhkj -->
